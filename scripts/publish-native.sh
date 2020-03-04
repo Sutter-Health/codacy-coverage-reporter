@@ -114,7 +114,7 @@ case "$TARGET" in
       --entrypoint=bash \
       -v $HOME:$HOME:ro \
       -v $PWD:$PWD \
-      oracle/graalvm-ce:19.3.0-java8 \
+      oracle/graalvm-ce:19.3.1-java8 \
       -c "yum install -y libstdc++-static && ${INSTALL_UPX} && gu install native-image && ${BUILD_CMD} && ${COMPRESS_USING_UPX}"
     ;;
   *)
